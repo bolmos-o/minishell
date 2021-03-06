@@ -1,0 +1,30 @@
+int main(int argc, char **argv, char **env)
+{
+	char	*line;
+	char	**tokens;
+	t_cmd	**cmds;
+	int	b;
+	int	c;
+	int	*fildes[2];
+
+	(void)argc;
+	(void)argv;
+	b = 0;
+	write(1, "minishell-1.0$ ", 15);
+	while (get_next_line(0, &line) > 0)
+	{
+		if ((cmds = get_cmds(lex(line), env)))
+		{
+			c = 0;
+			while (cmds[c])
+			{
+				if ((cmds[c])->args)
+					exec(&env, &b, (cmds[c])->args, cmds[c], fildes);
+				c++;
+			}
+		}
+		free(line);
+		write(1, "minishell-1.0$ ", 15);
+	}
+	return (0);
+}
