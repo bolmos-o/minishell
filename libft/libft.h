@@ -1,13 +1,13 @@
 /* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   libft.h                                            :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: bolmos-o <bolmos-o@student.42.fr>          +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/11/19 11:04:04 by bolmos-o          #+#    #+#             */
-/*   Updated: 2020/12/15 01:50:12 by bolmos-o         ###   ########.fr       */
-/*                                                                            */
+/*																			*/
+/*														:::	  ::::::::   */
+/*   libft.h											:+:	  :+:	:+:   */
+/*													+:+ +:+		 +:+	 */
+/*   By: bolmos-o <bolmos-o@student.42.fr>		  +#+  +:+	   +#+		*/
+/*												+#+#+#+#+#+   +#+		   */
+/*   Created: 2020/11/19 11:04:04 by bolmos-o		  #+#	#+#			 */
+/*   Updated: 2020/12/15 01:50:12 by bolmos-o		 ###   ########.fr	   */
+/*																			*/
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
@@ -83,8 +83,8 @@ void	ft_lstiter(t_list *lst, void (*f)(void *));
 t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *));
 int		get_next_line(int fd, char **line);
 int		ft_printf(const char *str, ...);
-long    ft_labs(long i);
-int    ft_putchar(int c);
+long	ft_labs(long i);
+int	ft_putchar(int c);
 size_t ft_strspn(const char *s, const char *accept);
 size_t ft_strcspn(const char *s, const char *reject);
 

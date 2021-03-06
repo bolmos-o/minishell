@@ -43,6 +43,6 @@ fclean  :
 				rm -f $(OBJS)
 				rm -f $(NAME)
 
-re      : 		fclean all
+re	  : 		fclean all
 
 .PHONY  : 		all fclean re
